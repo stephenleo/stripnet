@@ -8,7 +8,7 @@ Leverage the power of NLP Topic Modeling, Semantic Similarity and Network analys
 
 ## Install
 ```
-pip install git+https://github.com/stephenleo/stripnet.git
+pip install stripnet
 ```
 
 ## Generate the STriP network analysis on default settings
@@ -40,7 +40,7 @@ stripnet.fit_transform(data['text'])
 - If you are not satisfied with the topics you get, just restart the kernel and rerun it. The Topic Modeling framework has some level of randomness so the topics will change slightly with every run.
 - You can also tweak the paremeters of the various models, please look out for the full documentation for the details!
 
-![STriP Network](images/strip_network.png "Sample STriP Network")
+![STriP Network](https://github.com/stephenleo/stripnet/blob/main/images/strip_network.png?raw=true "Sample STriP Network")
 
 ## Find the most important paper
 - After you fit the model using the above steps, you can plot the most important papers with one line of code
@@ -50,7 +50,7 @@ stripnet.fit_transform(data['text'])
 stripnet.most_important()
 ```
 
-![Most Important Text](images/centrality.png "Most Important Papers")
+![Most Important Text](https://github.com/stephenleo/stripnet/blob/main/images/centrality.png?raw=true "Most Important Papers")
 
 # Acknowledgements
 STriP Net stands on the shoulder of giants and several prior work. The most notable being
