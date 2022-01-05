@@ -4,11 +4,20 @@ import pathlib
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-required_packages = (pathlib.Path(__file__).parent / "requirements.txt").read_text().splitlines()
+# required_packages = (pathlib.Path(__file__).parent / "requirements.txt").read_text().splitlines()
+required_packages = ['bertopic==0.9.4',
+                     'networkx==2.6.3',
+                     'numpy==1.22.0',
+                     'pandas==1.3.5',
+                     'plotly==5.5.0',
+                     'pyvis==0.1.9',
+                     'scikit_learn==1.0.2',
+                     'sentence_transformers==2.1.0',
+                     'setuptools==58.0.4']
 
 setuptools.setup(
-    name="stripnet", 
-    version="0.0.1",
+    name="stripnet",
+    version="0.0.2",
     author="stephenleo",
     author_email="stephen.leo87@gmail.com",
     description="STriP Net: Semantic Similarity of Scientific Papers (S3P) Network",

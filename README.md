@@ -64,4 +64,4 @@ STriP Net stands on the shoulder of giants and several prior work. The most nota
 If this work helped you in any way, please consider the following way to give me feedback so I can spend more time on this project
 1. ⭐ this repository
 2. ❤️ [the Huggingface space ](https://huggingface.co/spaces/stephenleo/strip)
-3. 📖 [Buy me a Book!](https://www.buymeacoffee.com/stephenleo)
+3. ☕ [Buy me a Coffee!](https://www.buymeacoffee.com/stephenleo)
