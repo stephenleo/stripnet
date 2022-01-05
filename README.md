@@ -8,7 +8,7 @@ Leverage the power of NLP Topic Modeling, Semantic Similarity and Network analys
 
 ## Install
 ```
-pip install [TODO]
+pip install git+https://github.com/stephenleo/stripnet.git
 ```
 
 ## Generate the STriP network analysis on default settings
