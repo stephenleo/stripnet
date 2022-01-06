@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/444768334.svg)](https://zenodo.org/badge/latestdoi/444768334)
 
+Do you read a lot of Scientific Papers? Have you ever wondered what are the overarching themes in the papers that you've read and how all the papers are semantically connected to one another? Look no further!
+
 Leverage the power of NLP Topic Modeling, Semantic Similarity, and Network analysis to study the themes and semantic relations within a corpus of research papers.
 
 ✅ Generate STriP Network on your own collection of research papers with just three lines of code!
