@@ -1,4 +1,4 @@
-# STriP Net: Semantic Similarity of Scientific Papers (S3P) Network
+# 💡 STriP Net: Semantic Similarity of Scientific Papers (S3P) Network
 
 Leverage the power of NLP Topic Modeling, Semantic Similarity and Network analysis to study the themes and semantical relations within a corpus of research papers.
 
@@ -6,7 +6,7 @@ Leverage the power of NLP Topic Modeling, Semantic Similarity and Network analys
 - It is very much a work in progress. Check back regularly for more updates and features. 
 - Please leave a ⭐ to let me know it has been useful to you so that I can dedicate more of my time working on it.
 
-## Install
+## ⚡ Install
 - Highly recommend to install in a conda environment
 ```
 conda create -n stripnet python=3.8 jupyterlab -y
@@ -18,7 +18,7 @@ conda activate stripnet
 pip install stripnet
 ```
 
-## Generate the STriP network analysis on default settings
+## 🔥🚀 Generate the STriP network analysis on default settings
 - STriP can essentially run on any pandas dataframe column containing text. 
 - However, the pretrained model is hardcoded (for now), so you'll see the best results while running it on a column that combines the `title` and `abstract` of papers separated by `[SEP]` keyword. Please see below 
 
@@ -49,7 +49,7 @@ stripnet.fit_transform(data['text'])
 
 ![STriP Network](https://github.com/stephenleo/stripnet/blob/main/images/strip_network.png?raw=true "Sample STriP Network")
 
-## Find the most important paper
+## 🏅 Find the most important paper
 - After you fit the model using the above steps, you can plot the most important papers with one line of code
 - The plot is fully interactive too! Hovering over any bar shows the relevant information of the paper.
 
@@ -59,7 +59,7 @@ stripnet.most_important_docs()
 
 ![Most Important Text](https://github.com/stephenleo/stripnet/blob/main/images/centrality.png?raw=true "Most Important Papers")
 
-# Acknowledgements
+# 🤩 Acknowledgements
 STriP Net stands on the shoulder of giants and several prior work. The most notable being
 1. Sentence Transformers [[Paper]](https://arxiv.org/abs/1908.10084) [[Code]](https://www.sbert.net/)
 2. AllenAI Specter pretrained model [[Paper]](https://arxiv.org/abs/2004.07180) [[Code]](https://github.com/allenai/specter)
@@ -67,7 +67,7 @@ STriP Net stands on the shoulder of giants and several prior work. The most nota
 4. Networkx [[Code]](https://networkx.org/)
 5. Pyvis [[Code]](https://github.com/WestHealth/pyvis)
 
-# Buy me a coffee
+# 🙏 Buy me a coffee
 If this work helped you in any way, please consider the following way to give me feedback so I can spend more time on this project
 1. ⭐ this repository
 2. ❤️ [the Huggingface space ](https://huggingface.co/spaces/stephenleo/strip) (Coming Jan 11 2022!)
