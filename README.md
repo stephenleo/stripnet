@@ -65,7 +65,8 @@ stripnet.most_important_docs()
 
 ![Most Important Text](https://github.com/stephenleo/stripnet/blob/main/images/centrality.png?raw=true "Most Important Papers")
 
-## 🎓 Citations
+## 🎓 Citation
+To cite STriP Net in your work, please use the following bibtex reference:
 ```
 @software{marie_stephen_leo_2022_5823822,
   author       = {Marie Stephen Leo},
