@@ -1,10 +1,14 @@
 # 💡 STriP Net: Semantic Similarity of Scientific Papers (S3P) Network
 
-Leverage the power of NLP Topic Modeling, Semantic Similarity and Network analysis to study the themes and semantical relations within a corpus of research papers.
+Leverage the power of NLP Topic Modeling, Semantic Similarity, and Network analysis to study the themes and semantic relations within a corpus of research papers.
 
-- This repo was hacked together over the weekend of New Year 2022. 
-- It is very much a work in progress. Check back regularly for more updates and features. 
-- Please leave a ⭐ to let me know it has been useful to you so that I can dedicate more of my time working on it.
+✅ Generate STriP Network on your own collection of research papers with just three lines of code!
+
+✅ Interactive plots to quickly identify research themes and most important papers
+
+✅ This repo was hacked together over the weekend of New Year 2022. This is only the initial release, with lots of work planned.
+
+💪 Please leave a ⭐ to let me know that STriP Net has been helpful to you so that I can dedicate more of my time working on it.
 
 ## ⚡ Install
 - Highly recommend to install in a conda environment
