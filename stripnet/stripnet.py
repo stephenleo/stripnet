@@ -36,10 +36,16 @@ class StripNet:
         '''load_bertopic_model Initialize a BERTopic model with the provided arguments
 
         Args:
-            min_topic_size (int, optional): [description]. Defaults to 10.
-            n_gram_range (tuple, optional): [description]. Defaults to (1, 1).
-            stop_words (str, optional): [description]. Defaults to 'english'.
-            verbose (bool, optional): [description]. Defaults to True.
+            min_topic_size (int, optional): The minimum size of the topic. 
+                                            Increasing this value will lead to a lower number of clusters/topics. 
+                                            Defaults to 10.
+            n_gram_range (tuple, optional): The n-gram range for the CountVectorizer.
+                                            Advised to keep high values between 1 and 3.
+                                            More would likely lead to memory issues.
+                                            Defaults to (1, 1).
+            stop_words (str, optional): The sklearn stopwords to use. 
+                                        Defaults to 'english'.
+            verbose (bool, optional): Defaults to True.
 
         Returns:
             BERTopic: Initialized BERTopic model
@@ -68,10 +74,16 @@ class StripNet:
 
         Args:
             text (pd.Series): Pandas dataframe column containing the text on which to run the STriPNet pipeline
-            min_topic_size (int, optional): [description]. Defaults to 10.
-            n_gram_range (tuple, optional): [description]. Defaults to (1, 1).
-            stop_words (str, optional): [description]. Defaults to 'english'.
-            verbose (bool, optional): [description]. Defaults to True.
+            min_topic_size (int, optional): The minimum size of the topic. 
+                                            Increasing this value will lead to a lower number of clusters/topics. 
+                                            Defaults to 10.
+            n_gram_range (tuple, optional): The n-gram range for the CountVectorizer.
+                                            Advised to keep high values between 1 and 3.
+                                            More would likely lead to memory issues.
+                                            Defaults to (1, 1).
+            stop_words (str, optional): The sklearn stopwords to use. 
+                                        Defaults to 'english'.
+            verbose (bool, optional): Defaults to True.
 
         Returns:
             pd.DataFrame: Topics datafame including the topics for each row of input text
@@ -108,9 +120,12 @@ class StripNet:
         Args:
             topic_data (pd.DataFrame): Topics datafame including the topics for each row of input text
             topics (dict): Topics dictionary of the form {Topic: "Topic_Name"}
-            threshold (float, optional): Minimum cosine similarity to draw a link on the network. Default value None will use an internally calculated threshold value.
-            max_connections (int, optional): Maximum connections to allow in the network. The actual value used might be lower than this due to internal calculations. Defaults to None which uses the internally generated heuristic for max_connections
-            remove_isolated_nodes (bool, optional): [description]. Defaults to False.
+            threshold (float, optional): Minimum cosine similarity to draw a link on the network. 
+                                         Default value None will use an internally calculated threshold value.
+            max_connections (int, optional): Maximum connections to allow in the network. 
+                                             The actual value used might be lower than this due to internal calculations. 
+                                             Defaults to None which uses the internally generated heuristic for max_connections
+            remove_isolated_nodes (bool, optional): True will remove any nodes that have 0 edges. Defaults to False.
         Returns:
             nx.Graph: NetworkX graph of the STriPNet
             Network: Pyvis graph of the STriPNet for plotting
@@ -138,11 +153,14 @@ class StripNet:
 
         return nx_net, pyvis_net
 
-    def most_important(self, centrality_option: str = 'Betweenness Centrality') -> go.Figure:
-        '''most_important Plot most important texts as per network centrality calculation
+    def most_important_docs(self, centrality_option: str = 'Betweenness Centrality') -> go.Figure:
+        '''most_important_docs Plot most important texts as per network centrality calculation
 
         Args:
-            centrality_option (str, optional): The network centrality measure to use. Defaults to 'Betweenness Centrality'.
+            centrality_option (str, optional): The network centrality measure to use. 
+                                               Supported values are: 
+                                               ('Closeness Centrality', 'Degree Centrality', 'Eigenvector Centrality' or 'Betweenness Centrality')
+                                               Defaults to 'Betweenness Centrality'.
 
         Returns:
             go.Figure: Plotly graph object plot
@@ -188,13 +206,23 @@ class StripNet:
 
         Args:
             text (pd.Series): Pandas dataframe column containing the text on which to run the STriPNet pipeline.
-            min_topic_size (int, optional): [description]. Defaults to 10.
-            n_gram_range (tuple, optional): [description]. Defaults to (1, 1).
-            stop_words (str, optional): [description]. Defaults to 'english'.
-            threshold (float, optional): Minimum cosine similarity to draw a link on the network. Default value None will use an internally calculated threshold value.
-            remove_isolated_nodes (bool, optional): [description]. Defaults to False.
-            max_connections (int, optional): Maximum connections to allow in the network. The actual value used might be lower than this due to internal calculations. Defaults to None which uses the internally generated heuristic for max_connections
-            verbose (bool, optional): [description]. Defaults to True.
+            
+            min_topic_size (int, optional): The minimum size of the topic. 
+                                            Increasing this value will lead to a lower number of clusters/topics. 
+                                            Defaults to 10.
+            n_gram_range (tuple, optional): The n-gram range for the CountVectorizer.
+                                            Advised to keep high values between 1 and 3.
+                                            More would likely lead to memory issues.
+                                            Defaults to (1, 1).
+            stop_words (str, optional): The sklearn stopwords to use. 
+                                        Defaults to 'english'.           
+            threshold (float, optional): Minimum cosine similarity to draw a link on the network. 
+                                         Default value None will use an internally calculated threshold value.
+            remove_isolated_nodes (bool, optional): True will remove any nodes that have 0 edges. Defaults to False.
+            max_connections (int, optional): Maximum connections to allow in the network. 
+                                             The actual value used might be lower than this due to internal calculations. 
+                                             Defaults to None which uses the internally generated heuristic for max_connections
+            verbose (bool, optional): Defaults to True.
         '''
         if text.isna().sum() > 0:
             logger.info('Missing data detected. Dropping them')

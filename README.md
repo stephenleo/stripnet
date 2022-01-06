@@ -7,6 +7,13 @@ Leverage the power of NLP Topic Modeling, Semantic Similarity and Network analys
 - Please leave a ⭐ to let me know it has been useful to you so that I can dedicate more of my time working on it.
 
 ## Install
+- Highly recommend to install in a conda environment
+```
+conda create -n stripnet python=3.8 jupyterlab -y
+conda activate stripnet
+```
+
+- Pip install this library
 ```
 pip install stripnet
 ```
@@ -47,7 +54,7 @@ stripnet.fit_transform(data['text'])
 - The plot is fully interactive too! Hovering over any bar shows the relevant information of the paper.
 
 ```
-stripnet.most_important()
+stripnet.most_important_docs()
 ```
 
 ![Most Important Text](https://github.com/stephenleo/stripnet/blob/main/images/centrality.png?raw=true "Most Important Papers")
@@ -63,5 +70,6 @@ STriP Net stands on the shoulder of giants and several prior work. The most nota
 # Buy me a coffee
 If this work helped you in any way, please consider the following way to give me feedback so I can spend more time on this project
 1. ⭐ this repository
-2. ❤️ [the Huggingface space ](https://huggingface.co/spaces/stephenleo/strip)
-3. ☕ [Buy me a Coffee!](https://www.buymeacoffee.com/stephenleo)
+2. ❤️ [the Huggingface space ](https://huggingface.co/spaces/stephenleo/strip) (Coming Jan 11 2022!)
+3. 👏 [the Medium post](https://stephen-leo.medium.com/) (Coming End Jan 2022!)
+4. ☕ [Buy me a Coffee!](https://www.buymeacoffee.com/stephenleo)

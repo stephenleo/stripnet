@@ -7,3 +7,4 @@ pyvis==0.1.9
 scikit_learn==1.0.2
 sentence_transformers==2.1.0
 setuptools==58.0.4
+ipywidgets==7.6.5
