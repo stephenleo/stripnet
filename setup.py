@@ -12,11 +12,12 @@ required_packages = ['bertopic==0.9.4',
                      'plotly==5.5.0',
                      'pyvis==0.1.9',
                      'scikit_learn==1.0.2',
-                     'sentence_transformers==2.1.0']
+                     'sentence_transformers==2.1.0',
+                     'ipywidgets==7.6.5']
 
 setuptools.setup(
     name="stripnet",
-    version="0.0.4",
+    version="0.0.5",
     author="stephenleo",
     author_email="stephen.leo87@gmail.com",
     description="STriP Net: Semantic Similarity of Scientific Papers (S3P) Network",
