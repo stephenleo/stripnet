@@ -1,5 +1,7 @@
 # 💡 STriP Net: Semantic Similarity of Scientific Papers (S3P) Network
 
+[![DOI](https://zenodo.org/badge/444768334.svg)](https://zenodo.org/badge/latestdoi/444768334)
+
 Leverage the power of NLP Topic Modeling, Semantic Similarity, and Network analysis to study the themes and semantic relations within a corpus of research papers.
 
 ✅ Generate STriP Network on your own collection of research papers with just three lines of code!
