@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Leo
+    given-names: Marie Stephen
+    orcid: https://orcid.org/0000-0003-2676-3324
+title: stephenleo/stripnet: v0.0.5.zenodo
+version: v0.0.5.zenodo
+doi: 10.5281/zenodo.5823822
+date-released: 2022-01-06
