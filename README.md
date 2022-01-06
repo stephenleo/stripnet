@@ -65,6 +65,20 @@ stripnet.most_important_docs()
 
 ![Most Important Text](https://github.com/stephenleo/stripnet/blob/main/images/centrality.png?raw=true "Most Important Papers")
 
+# 🎓 Citations
+```
+@software{marie_stephen_leo_2022_5823822,
+  author       = {Marie Stephen Leo},
+  title        = {stephenleo/stripnet: v0.0.5.zenodo},
+  month        = jan,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {v0.0.5.zenodo},
+  doi          = {10.5281/zenodo.5823822},
+  url          = {https://doi.org/10.5281/zenodo.5823822}
+}
+```
+
 # 🤩 Acknowledgements
 STriP Net stands on the shoulder of giants and several prior work. The most notable being
 1. Sentence Transformers [[Paper]](https://arxiv.org/abs/1908.10084) [[Code]](https://www.sbert.net/)
