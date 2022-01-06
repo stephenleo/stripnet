@@ -4,7 +4,7 @@ authors:
   - family-names: Leo
     given-names: Marie Stephen
     orcid: https://orcid.org/0000-0003-2676-3324
-title: stephenleo/stripnet: v0.0.5.zenodo
+title: STriP Net: Semantic Similarity of Scientific Papers (S3P) Network
 version: v0.0.5.zenodo
 doi: 10.5281/zenodo.5823822
 date-released: 2022-01-06
