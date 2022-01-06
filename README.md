@@ -65,7 +65,7 @@ stripnet.most_important_docs()
 
 ![Most Important Text](https://github.com/stephenleo/stripnet/blob/main/images/centrality.png?raw=true "Most Important Papers")
 
-# 🎓 Citations
+## 🎓 Citations
 ```
 @software{marie_stephen_leo_2022_5823822,
   author       = {Marie Stephen Leo},
@@ -79,7 +79,7 @@ stripnet.most_important_docs()
 }
 ```
 
-# 🤩 Acknowledgements
+## 🤩 Acknowledgements
 STriP Net stands on the shoulder of giants and several prior work. The most notable being
 1. Sentence Transformers [[Paper]](https://arxiv.org/abs/1908.10084) [[Code]](https://www.sbert.net/)
 2. AllenAI Specter pretrained model [[Paper]](https://arxiv.org/abs/2004.07180) [[Code]](https://github.com/allenai/specter)
@@ -87,7 +87,7 @@ STriP Net stands on the shoulder of giants and several prior work. The most nota
 4. Networkx [[Code]](https://networkx.org/)
 5. Pyvis [[Code]](https://github.com/WestHealth/pyvis)
 
-# 🙏 Buy me a coffee
+## 🙏 Buy me a coffee
 If this work helped you in any way, please consider the following way to give me feedback so I can spend more time on this project
 1. ⭐ this repository
 2. ❤️ [the Huggingface space ](https://huggingface.co/spaces/stephenleo/strip) (Coming Jan 11 2022!)
