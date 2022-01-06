@@ -70,7 +70,7 @@ To cite STriP Net in your work, please use the following bibtex reference:
 ```
 @software{marie_stephen_leo_2022_5823822,
   author       = {Marie Stephen Leo},
-  title        = {stephenleo/stripnet: v0.0.5.zenodo},
+  title        = {STriP Net: Semantic Similarity of Scientific Papers (S3P) Network},
   month        = jan,
   year         = 2022,
   publisher    = {Zenodo},
