@@ -8,7 +8,7 @@ Leverage the power of NLP Topic Modeling, Semantic Similarity, and Network analy
 
 ✅ This repo was hacked together over the weekend of New Year 2022. This is only the initial release, with lots of work planned.
 
-Please leave a ⭐ to let me know that STriP Net has been helpful to you so that I can dedicate more of my time working on it.
+💪 Please leave a ⭐ to let me know that STriP Net has been helpful to you so that I can dedicate more of my time working on it.
 
 ## ⚡ Install
 - Highly recommend to install in a conda environment
