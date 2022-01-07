@@ -69,28 +69,29 @@ stripnet.most_important_docs()
 
 ## 🛠️ Common Issues
 1. If your StripNet graph is just one big ball of moving fireflies, try these steps
-    a. Check the value of `threshold` currently used by stripnet
-        ```
-        current_threshold = stripnet.threshold
-        print(current_threshold)
-        ```
-    b. Increase the value of `threshold` in steps of $0.05$ and try again until you see a good looking network. Remember the max value of threshold is 1! If you're threshold is already $0.95$ then try increasing in steps of $0.01$ instead.
-        ```
-        stripnet.fit_transform(data['text'], threshold=current_threshold+0.05)
-        ```
+    - Check the value of `threshold` currently used by stripnet
+    ```
+    current_threshold = stripnet.threshold
+    print(current_threshold)
+    ```
+    - Increase the value of `threshold` in steps of 0.05 and try again until you see a good looking network. Remember the max value of threshold is 1! If you're threshold is already 0.95 then try increasing in steps of 0.01 instead.
+    ```
+    stripnet.fit_transform(data['text'], threshold=current_threshold+0.05)
+    ```
  2. If you're dataset is small (<500 rows) and the number of topics generated seems too less
-    a. Try tweaking the value of `min_topic_size` to a value lower than the default value of $10$ until you get topics that look reasonable to you
-        ```
-        stripnet.fit_transform(data['text'], min_topic_size=5)
-        ```
+    - Try tweaking the value of `min_topic_size` to a value lower than the default value of 10 until you get topics that look reasonable to you
+    ```
+    stripnet.fit_transform(data['text'], min_topic_size=5)
+    ```   
  3. After the above two steps, if your graph looks messy, try removing isolated nodes (those nodes that don't have any connections)
-        ```
-        stripnet.fit_transform(data['text'], remove_isolated_nodes=True)
-        ```
+    ```
+    stripnet.fit_transform(data['text'], remove_isolated_nodes=True)
+    ```  
  4. In practice, you might have to tweak all three at the same time!
-        ```
-        stripnet.fit_transform(data['text'], threshold=current_threshold+0.05, min_topic_size=5, remove_isolated_nodes=True)
-        ```
+    ```
+    stripnet.fit_transform(data['text'], threshold=current_threshold+0.05, min_topic_size=5, remove_isolated_nodes=True)
+    ```
+        
  I'm testing out the network on a variety of data to pick better default values. Do let me know if some specific values worked the best for you!
 
 ## 🎓 Citation
