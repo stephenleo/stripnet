@@ -1,5 +1,9 @@
 # 💡 STriP Net: Semantic Similarity of Scientific Papers (S3P) Network
 
+
+[![Python](https://img.shields.io/pypi/pyversions/stripnet.svg?style=plastic)](https://pypi.org/project/stripnet/)
+[![PyPI](https://badge.fury.io/py/stripnet.svg)](https://badge.fury.io/py/stripnet)
+[![Downloads](https://img.shields.io/pypi/dm/stripnet)](https://pypi.org/project/stripnet/)
 [![DOI](https://zenodo.org/badge/444768334.svg)](https://zenodo.org/badge/latestdoi/444768334)
 
 Do you read a lot of Scientific Papers? Have you ever wondered what are the overarching themes in the papers that you've read and how all the papers are semantically connected to one another? Look no further!
