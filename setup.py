@@ -17,7 +17,7 @@ required_packages = ['bertopic==0.9.4',
 
 setuptools.setup(
     name="stripnet",
-    version="0.0.5",
+    version="0.0.6",
     author="stephenleo",
     author_email="stephen.leo87@gmail.com",
     description="STriP Net: Semantic Similarity of Scientific Papers (S3P) Network",
