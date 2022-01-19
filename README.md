@@ -1,10 +1,20 @@
 # 💡 STriP Net: Semantic Similarity of Scientific Papers (S3P) Network
 
-
-[![Python](https://img.shields.io/pypi/pyversions/stripnet.svg?style=plastic)](https://pypi.org/project/stripnet/)
+<!--- BADGES: START --->
+[![Python](https://img.shields.io/pypi/pyversions/stripnet.svg?style=plastic)][#pypi-package]
 [![PyPI](https://badge.fury.io/py/stripnet.svg)](https://badge.fury.io/py/stripnet)
-[![Downloads](http://pepy.tech/badge/stripnet)](https://pypi.org/project/stripnet/)
+[![Downloads](http://pepy.tech/badge/stripnet)][#pypi-package]
 [![DOI](https://zenodo.org/badge/444768334.svg)](https://zenodo.org/badge/latestdoi/444768334)
+[![GitHub - License](https://img.shields.io/github/license/stephenleo/stripnet?logo=github&style=flat&color=green)][#github-license]
+[![Conda - Platform](https://img.shields.io/conda/pn/conda-forge/stripnet?logo=anaconda&style=flat)][#conda-forge-package]
+[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/stripnet?logo=anaconda&style=flat&color=orange)][#conda-forge-package]
+[![Conda Recipe](https://img.shields.io/static/v1?logo=conda-forge&style=flat&color=green&label=recipe&message=stripnet)][#conda-forge-feedstock]
+
+[#github-license]: https://github.com/stephenleo/stripnet/blob/main/LICENSE
+[#pypi-package]: https://pypi.org/project/stripnet/
+[#conda-forge-package]: https://anaconda.org/conda-forge/stripnet
+[#conda-forge-feedstock]: https://github.com/conda-forge/stripnet-feedstock
+<!--- BADGES: END --->
 
 Do you read a lot of Scientific Papers? Have you ever wondered what are the overarching themes in the papers that you've read and how all the papers are semantically connected to one another? Look no further!
 
@@ -19,14 +29,29 @@ Leverage the power of NLP Topic Modeling, Semantic Similarity, and Network analy
 💪 Please leave a ⭐ to let me know that STriP Net has been helpful to you so that I can dedicate more of my time working on it.
 
 ## ⚡ Install
-- Highly recommend to install in a conda environment
+
+### Install with conda
+
+This is perhaps the most hasslefree option for installing stripnet with conda. 
+
+```sh
+conda install -c conda-forge stripnet
 ```
+
+### Install with pip
+
+If you want to install `stripnet` using pip, it is highly recommend to install in a conda environment.
+
+- Create a conda environment (here we choose the environment name as `stripnet`) and activate it.
+
+```sh
 conda create -n stripnet python=3.8 jupyterlab -y
 conda activate stripnet
 ```
 
 - Pip install this library
-```
+
+```sh
 pip install stripnet
 ```
 
