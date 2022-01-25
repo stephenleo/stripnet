@@ -149,6 +149,6 @@ STriP Net stands on the shoulder of giants and several prior work. The most nota
 ## 🙏 Buy me a coffee
 If this work helped you in any way, please consider the following way to give me feedback so I can spend more time on this project
 1. ⭐ this repository
-2. ❤️ [the Huggingface space ](https://huggingface.co/spaces/stephenleo/strip) (Coming Jan 11 2022!)
+2. ❤️ [the Huggingface space ](https://huggingface.co/spaces/stephenleo/stripnet)
 3. 👏 [the Medium post](https://stephen-leo.medium.com/) (Coming End Jan 2022!)
 4. ☕ [Buy me a Coffee!](https://www.buymeacoffee.com/stephenleo)
