@@ -231,11 +231,9 @@ class StripNet:
         self.text = text
         self.remove_isolated_nodes = remove_isolated_nodes
 
-        if max_connections:
-            self.max_connections = max_connections
-        else:
-            self.max_connections = utils.calc_max_connections(
-                len(self.text), 1)
+        self.max_connections = max_connections or utils.calc_max_connections(
+            len(self.text), 1
+        )
 
         logger.info('========== Step1: Calculating Embeddings ==========')
         self.embeddings = self.embedding_gen(self.text)
